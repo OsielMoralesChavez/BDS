@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color: #fff;
+}
+
+
+h2{
+    font-size: 3rem;
+}
+
+.section {
+    padding: 1.5rem;
+}
+
+.foto {
+    text-align: center;
+}
+
+.foto img {
+    display: block;
+    margin: 0 auto;
+}
