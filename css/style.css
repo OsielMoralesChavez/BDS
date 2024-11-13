@@ -1,15 +1,39 @@
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body{
     background-color: black;
     color: #fff;
 }
 
+h2 {
+  font-size: 3rem; /* Tamaño de fuente grande */
+  color: #24c7c4; /* Color vibrante */
+  letter-spacing: 0.4rem; /* Espaciado entre letras */
+  font-family: "Bebas Neue", sans-serif; /* Fuente moderna */
+  text-shadow: 
+        0 0 5px #24c7c4,   /* Sombra suave */
+        0 0 10px #24c7c4,  /* Sombra más intensa */
+        0 0 15px #24c7c4;  /* Sombra más difusa */
+}
 
-h2{
-    font-size: 3rem;
+.texto{
+  font-family: "Roboto Condensed", serif;
+  letter-spacing: 1px;
 }
 
 .section {
     padding: 1.5rem;
+}
+main {
+    margin-bottom: 100px; 
+  }
+.inicio{
+    padding-top: 5rem;
 }
 
 .foto {
@@ -19,4 +43,70 @@ h2{
 .foto img {
     display: block;
     margin: 0 auto;
+}
+.bg-dark{
+  background-color: #000 !important;
+}
+.navbar-brand {
+  color: #fff;
+  
+}
+.navbar-nav .nav-link {
+  color: #ffffff; 
+  font-family: "Roboto Condensed", serif;
+  letter-spacing: 2px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #cccccc; /* Cambia el color del texto al pasar el mouse */
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff; /* Cambia el color del texto del elemento activo */
+}
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #24c7c4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ccc; /* Light gray hover color */
+  }
+  
+  .footer-copyright {
+    font-size: 14px;
+    color: #666; /* Dark gray text color */
+  }
+  
+  .bi {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  /* Consultas de medios para dispositivos móviles */
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2.5rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+      letter-spacing: 0.2rem; /* Menor espaciado entre letras */
+      margin: 1rem 0; /* Ajuste de márgenes */
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 2rem; /* Tamaño de fuente aún más pequeño para pantallas muy pequeñas */
+      letter-spacing: 0.1rem; /* Menor espaciado entre letras */
+      margin: 0.5rem 0; /* Ajuste de márgenes */
+      text-align: center;
+  }
 }
