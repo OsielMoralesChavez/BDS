@@ -1,99 +1,243 @@
-<!doctype html>
-<html lang="es">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BDS</title>
-    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/style.css">   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDS - Innovación y Tecnología</title>
+    <meta name="description" content="BDS - Desarrollo web, automatización de procesos y más">
+    <meta name="keywords" content="desarrollo web, automatización, desarrollo web economico, marketing, marketing digital">
 
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="./assets/img/logo/logo.ico" type="logo de BDS">
+
+    <!-- Google Fonts -->
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 <body>
+    
+    
+    <!-- ======= Header ======= -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">BDS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Estructuras de Control
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/lineal.html">Lineal</a></li>
-                                <li><a class="dropdown-item" href="#">Condicional</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <div class="header">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/logo/BDS.webp" alt="logo de BDS" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-    <main class="inicio">
-        <div class="section">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 foto">
-                    <img src="./img/logo.png" alt="Nombre de la persona">
-                </div>
-                <div class="col-lg-6 order-md-first col-sm-12">
-                    <h2>Oso de Peluche</h2>
-                    <p class="texto">Mi enfoque se centra en combinar habilidades técnicas con una estética visualmente impactante y una experiencia de usuario atractiva. Soy un profesional comprometido con el aprendizaje continuo y me mantengo actualizado en las últimas tendencias y tecnologías del campo del diseño. Soy un comunicador efectivo y colaborador comprometido, capaz de trabajar en equipos multidisciplinarios para lograr resultados sobresalientes.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer fixed-bottom">
-        <hr>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="footer-links">
-                        <a href="https://www.instagram.com/m3li.sv/profilecard/?igsh=cGNqY2ppYnUwZzMw" target="_blank">
-                            <i class="bi bi-instagram"></i>
-                            Instagram
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="bi bi-linkedin"></i>
-                            LinkedIn
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="bi bi-github"></i>
-                            GitHub
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="bi bi-envelope"></i>
-                            Email
-                        </a>
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+              <h1>BDS - Innovación y Tecnología</h1>
+              <p class="texto">Somos un equipo comprometido con la transformación educativa y empresarial. Nos enfocamos en impulsar a las organizaciones mediante estrategias de comunicación efectivas, integrando el diseño como un motor de pensamiento innovador para alcanzar sus objetivos.</p>
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <button>
+                    <a class="boton1" href="#contact"><span>Iniciemos</span></a> 
+                </button>
+                <a href="#" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Ver video</span></a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-delay="200">
+              <img src="./assets/img/logo/logo.png" class="img-fluid animated imagen_1" alt="">
+            </div>
+          </div>
+        </div>
+    
+    </section>
+    <!-- End Hero -->
+
+    <!-- ======= Services Section ======= -->
+    <main>
+        <section id="services" class="servicios">
+            <div>
+                <h2 class="text-center mb-4">Nuestros Servicios</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row servicios mb-4" data-aos="fade-right">
+                            <i class="service-icon bi bi-laptop"></i>
+                            <div class="col descripcion">
+                                <h3>Desarrollo Web</h3>
+                                <p>Diseño y desarrollo de sitios web modernos y funcionales.</p>
+                            </div>
+                        </div>
+                        <div class="row servicios mb-4" data-aos="fade-right">
+                            <i class="service-icon bi bi-robot"></i>
+                            <div class="col descripcion">
+                                <h3>Bots & Automatización</h3>
+                                <p>Optimización de procesos mediante bots inteligentes.</p>
+                            </div>
+                        </div>
+                        <div class="row servicios mb-4" data-aos="fade-right">
+                            <i class="service-icon bi bi-briefcase"></i>
+                            <div class="col descripcion">
+                                <h3>Cursos de Marketing</h3>
+                                <p>Capacitación en marketing digital para equipos de trabajo.</p>
+                            </div>
+                        </div>
+                        <div class="row servicios mb-4" data-aos="fade-right">
+                            <i class="service-icon bi bi-tools"></i>
+                            <div class="col descripcion">
+                                <h3>Mantenimiento</h3>
+                                <p>Soporte preventivo y correctivo para equipos de cómputo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="./assets/img/logo/BDS.webp" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./assets/img/principal/fondo.webp" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./assets/img/Servicios/Equipo.webp" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="footer-copyright">
-                        &copy; 2024 Derechos Reservados de Oso de Peluche.
+            </div>
+        </section>
+    </main>
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Portafolio</h2>
+        <p class="text-center">Descubre algunos de nuestros proyectos destacados.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/img/logo/logo.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Sitio web para una empresa de e-commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/img/logo/logo.png" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Automatización de flujo de trabajo para PYMEs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/img/logo/logo.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Capacitación en marketing digital para startups.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <p class="text-center">¡Contáctanos para más información o cotizaciones!</p>
+        <form action="https://formspree.io/f/xkgneznb" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control mb-3" placeholder="Nombre">
+                </div>
+                <div class="col-md-6">
+                    <input name="Email" id="email" type="email" class="form-control mb-3" placeholder="Correo Electrónico">
+                </div>
+                <div class="col-12">
+                    <textarea name="message" class="form-control mb-3" rows="4" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section id="chatbot" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Chat con nuestro Asistente</h2>
+        <div id="chat-window" class="p-3 border bg-white" style="height: 300px; overflow-y: auto;"></div>
+        <form id="chat-form" class="mt-3">
+            <input type="text" id="user-input" class="form-control" placeholder="Escribe tu mensaje aquí..." required>
+            <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 BDS. Todos los derechos reservados.</p>
+</footer>
+
+<!--Start of Tawk.to Script-->
+
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/675440134304e3196aee3afb/1ieghkjdg';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script> 
+    <!--End of Tawk.to Script-->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 3000
+        });
+    </script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

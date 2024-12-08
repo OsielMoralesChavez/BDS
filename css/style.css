@@ -1,112 +1,369 @@
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-body{
-    background-color: black;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     color: #fff;
 }
 
-h2 {
-  font-size: 3rem; /* Tamaño de fuente grande */
-  color: #24c7c4; /* Color vibrante */
-  letter-spacing: 0.4rem; /* Espaciado entre letras */
-  font-family: "Bebas Neue", sans-serif; /* Fuente moderna */
-  text-shadow: 
-        0 0 5px #24c7c4,   /* Sombra suave */
-        0 0 10px #24c7c4,  /* Sombra más intensa */
-        0 0 15px #24c7c4;  /* Sombra más difusa */
-}
-
-.texto{
-  font-family: "Roboto Condensed", serif;
-  letter-spacing: 1px;
-}
-
-.section {
+section{
     padding: 1.5rem;
 }
-main {
-    margin-bottom: 100px; 
-  }
-.inicio{
-    padding-top: 5rem;
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    padding: 1.2rem;
+    font-family: "Oswald", sans-serif;
 }
 
-.foto {
-    text-align: center;
+h2{
+    padding: 2.5rem;
+    color: #000;
 }
 
-.foto img {
+.logo{
+    width: auto;
+    height: 2.5rem;
+}
+.texto{
+  font-size: 1rem;
+  letter-spacing: 4px;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: #060606;
+    color: #fff;
+}
+
+/* Estilo para el enlace activo */
+.navbar .nav-link.active {
+  color: #facd17 !important; /* Texto en amarillo */
+  position: relative;       /* Necesario para la línea */
+}
+
+/* Línea debajo del enlace activo */
+.navbar .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;          /* Ajusta la distancia debajo del texto */
+  left: 0;
+  width: 100%;
+  height: 1.5px;           /* Grosor de la línea */
+  background-color: #facd17; /* Color de la línea */
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #facd17;
+}
+
+#navbar {
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.fixed-top {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.navbar-toggler {
+    border-color: #facd17; 
+}
+
+.navbar-toggler-icon {
+    background-image: none; 
+}
+
+.navbar-toggler-icon:before {
+    content: ''; 
     display: block;
-    margin: 0 auto;
-}
-.bg-dark{
-  background-color: #000 !important;
-}
-.navbar-brand {
-  color: #fff;
-  
-}
-.navbar-nav .nav-link {
-  color: #ffffff; 
-  font-family: "Roboto Condensed", serif;
-  letter-spacing: 2px;
+    width: 30px; 
+    height: 3px; 
+    background-color: #facd17; 
+    position: relative;
+    margin: 6px 0; 
 }
 
-.navbar-nav .nav-link:hover {
-  color: #cccccc; /* Cambia el color del texto al pasar el mouse */
+.navbar-toggler-icon:after {
+    content: ''; /* Añade un nuevo contenido */
+    display: block;
+    width: 30px; /* Ajusta el tamaño del icono */
+    height: 3px; /* Grosor de las líneas */
+    background-color: #facd17; /* Color amarillo para las líneas */
+    position: relative;
+    margin: 6px 0; /* Espaciado entre las líneas */
 }
 
-.navbar-nav .nav-link.active {
-  color: #ffffff; /* Cambia el color del texto del elemento activo */
+/* Opcional: Cambia el tamaño del icono cuando se hace scroll */
+.scrolled .navbar-toggler-icon:before,
+.scrolled .navbar-toggler-icon:after {
+    width: 25px; /* Cambia el tamaño del icono */
+    height: 2px; /* Cambia el grosor */
 }
-.footer {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    padding: 20px;
-    text-align: center;
+
+/* Cambia la opacidad de la barra de navegación al hacer scroll */
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.6); /* Color más tenue */
+}
+
+/*Fin Navbar*/
+
+/*=========== Sección hero ===========*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: #060606;
   }
   
-  .footer-links a {
-    margin: 0 10px;
-    color: #24c7c4;
+  #hero .container {
+    padding-top: 72px;
+  }
+  
+  /* From Uiverse.io by TISEPSE */ 
+.boton1 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid  #facd17;
+    text-transform: uppercase;
+    color: #fefefe;
     text-decoration: none;
-    transition: color 0.2s ease;
+    font-weight: 600;
+    font-size: 20px;
   }
   
-  .footer-links a:hover {
-    color: #ccc; /* Light gray hover color */
+  .boton1::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background-color: #060606;
+    transition: 0.3s ease-in-out;
+    transform: scaleY(1);
   }
   
-  .footer-copyright {
-    font-size: 14px;
-    color: #666; /* Dark gray text color */
+  .boton1:hover::before {
+    transform: scaleY(0);
   }
   
-  .bi {
-    font-size: 18px;
-    margin-right: 5px;
+  .boton1::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background-color: #060606;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(1);
+    transition-delay: 0.5s;
   }
+  
+  .boton1:hover::after {
+    transform: scaleX(0);
+  }
+  
+  .boton1 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    background-color: none;
+    text-decoration: none;
+    background-color: #060606;
+    border: none;
+    padding: 1.2rem;
+  }
+  
+  #hero .btn-watch-video {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    margin: 10px 0 0 25px;
+    color: #fff;
+    line-height: 1;
+  }
+  
+  #hero .btn-watch-video i {
+    line-height: 0;
+    color: #fff;
+    font-size: 32px;
+    transition: 0.3s;
+    margin-right: 8px;
+  }
+  
+  #hero .btn-watch-video:hover i {
+    color: #facd17;
+  }
+  
+  #hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+  /* Imagen del lado derecho */
+.hero-img {
+  text-align: center;
+}
 
-  /* Consultas de medios para dispositivos móviles */
-@media (max-width: 768px) {
-  h2 {
-      font-size: 2.5rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
-      letter-spacing: 0.2rem; /* Menor espaciado entre letras */
-      margin: 1rem 0; /* Ajuste de márgenes */
-      text-align: center;
+.hero-img img {
+  max-width: 70%; /* Limita el tamaño máximo de la imagen */
+  height: auto;
+  display: block; /* Asegura que esté centrada en su contenedor */
+}
+
+/* Responsividad */
+
+@media (max-width: 576px) {
+  .hero-img img {
+      max-width: 40%; /* Aún más pequeño en dispositivos extra pequeños */
   }
 }
 
-@media (max-width: 480px) {
-  h2 {
-      font-size: 2rem; /* Tamaño de fuente aún más pequeño para pantallas muy pequeñas */
-      letter-spacing: 0.1rem; /* Menor espaciado entre letras */
-      margin: 0.5rem 0; /* Ajuste de márgenes */
+  @media (max-width: 991px) {
+    #hero {
+      height: 100vh;
       text-align: center;
+    }
+  
+    #hero .animated {
+      animation: none;
+    }
+  
+    #hero .hero-img {
+      text-align: center;
+    }
+  
+    #hero .hero-img img {
+      width: 50%;
+    }
   }
+  
+  @media (max-width: 768px) {
+    .hero-img img {
+      max-width: 50%; /* Reduce el tamaño en pantallas pequeñas */
+    }
+    #hero h1 {
+      font-size: 25px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  
+    #hero .hero-img img {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #hero .hero-img img {
+      width: 80%;
+    }
+  
+    #hero .btn-get-started {
+      font-size: 16px;
+      padding: 10px 24px 11px 24px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .hero-img img {
+        max-width: 40%; /* Ajuste adicional para dispositivos muy pequeños */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+}
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+/**/
+
+.boton{
+    padding: 1.5rem;
+}
+
+/*=========== Sección hero ===========*/
+
+.servicios {
+  background-color: #f8f9fa;
+}
+
+.servicios h2 {
+  font-weight: 700;
+  color: #333;
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-right: 15px;
+}
+
+.descripcion h3 {
+  font-weight: 600;
+  color: #495057;
+}
+
+.descripcion p {
+  color: #6c757d;
+}
+
+.equipo-servicios {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen se adapte sin distorsión */
+  border-radius: 8px; /* Opcional: añade bordes redondeados */
+}
+
+.text-container {
+    max-width: 600px; /* Define el ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px; /* Agrega espacio interno */
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejorar legibilidad */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+
+.service-icon {
+    width: 60px; /* Tamaño del círculo */
+    height: 60px; /* Tamaño del círculo */
+    border: 2px solid #000; /* Borde del círculo */
+    border-radius: 50%; /* Hace que sea un círculo */
+    display: flex; /* Para centrar el ícono */
+    align-items: center; /* Centra el ícono verticalmente */
+    justify-content: center; /* Centra el ícono horizontalmente */
+    font-size: 24px; /* Tamaño del ícono */
+    color: #000; /* Color del ícono */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.servicios {
+    display: flex; 
+    align-items: center; 
+}
+
+.servicios .descripcion {
+    text-align: left; 
+    padding-left: 1.5rem;
 }
